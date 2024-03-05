@@ -24,15 +24,14 @@ export const HeaderModalContextProvider = ({ children }) => {
     if (searchInit) {
       if (searchInit === '') {
         return todoItem;
-      } else if (todoItem.map(t => t.text.includes(searchInit))) {
-        return todoItem.filter(t => t.text.includes(searchInit));
       }
-    } else {
+      return todoItem.filter(t => t.text.includes(searchInit));
+      ////
+    } else if (filterItem) {
       if (filterItem === 'all') {
         return todoItem;
-      } else if (filterItem === 'active' || filterItem === 'completed') {
-        return todoItem.filter(t => t.status === filterItem);
       }
+      return todoItem.filter(t => t.status === filterItem);
     }
   };
 
