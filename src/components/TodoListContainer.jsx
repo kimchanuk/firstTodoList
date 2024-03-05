@@ -7,8 +7,7 @@ import { TodoDataContext } from '../context/TodoData';
 
 export default function TodoListContainer() {
   const { todos } = useContext(TodoDataContext);
-  const { headerTap, getFilteredItem, searchInit } =
-    useContext(HeaderModalContext);
+  const { headerTap, getFilteredItem } = useContext(HeaderModalContext);
 
   const newArray = getFilteredItem(todos, headerTap);
 

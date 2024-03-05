@@ -5,6 +5,7 @@ export default function ModifyModal() {
   const { modifyModalHandler, todos, setTodos, initValue, setInitValue } =
     useContext(TodoDataContext);
   const { id, text } = initValue;
+
   const modifyCompleted = e => {
     e.preventDefault();
     const d = todos.map(t => (t.id === id ? { ...initValue, text } : t));

@@ -18,8 +18,6 @@ export const HeaderModalContextProvider = ({ children }) => {
 
   const [searchInit, setSearchInit] = useState('');
 
-  const searchFilter = todoItem => {};
-
   const getFilteredItem = (todoItem, filterItem) => {
     if (searchInit) {
       if (searchInit === '') {
@@ -51,7 +49,6 @@ export const HeaderModalContextProvider = ({ children }) => {
         getFilteredItem,
         searchInit,
         setSearchInit,
-        searchFilter,
       }}
     >
       {children}
