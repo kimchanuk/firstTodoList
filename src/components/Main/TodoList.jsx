@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import { TodoDataContext } from '../context/TodoData';
-import ModifyModal from './ModifyModal';
-import { HeaderModalContext } from '../context/HeaderModal';
+import { TodoDataContext } from '../../context/TodoData';
+import ModifyModal from '../Modal/ModifyModal';
+import { HeaderModalContext } from '../../context/HeaderModal';
 
 export default function TodoList({ todosObj }) {
   const { id, text, status } = todosObj;

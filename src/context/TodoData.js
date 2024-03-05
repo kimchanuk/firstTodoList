@@ -23,6 +23,8 @@ export const TodoDataContextProvider = ({ children }) => {
   };
   //todos에 인풋값이 추가되는 함수
 
+  //검색
+
   const [modifyModal, setModifyModal] = useState(false);
   const modifyModalHandler = () => {
     setModifyModal(prev => !prev);

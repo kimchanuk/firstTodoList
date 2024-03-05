@@ -35,6 +35,15 @@ li {
 
 /* main */
 
+.searchForm > input {
+  border: 3px solid pink;
+  background-color: pink;
+  color: black;
+  width: 100%;
+  margin-top: 20px;
+  padding: 8px;
+}
+
 .main {
   border: 3px solid pink;
   width: 100%;

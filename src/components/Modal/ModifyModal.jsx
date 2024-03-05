@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { TodoDataContext } from '../context/TodoData';
+import { TodoDataContext } from '../../context/TodoData';
 
 export default function ModifyModal() {
   const { modifyModalHandler, todos, setTodos, initValue, setInitValue } =

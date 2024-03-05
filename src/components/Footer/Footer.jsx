@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { TodoDataContext } from '../context/TodoData';
+import { TodoDataContext } from '../../context/TodoData';
 
 export default function Footer() {
   const { inputValue, setInputValue, insertSubmitHandler } =
@@ -24,7 +24,7 @@ export default function Footer() {
       <input
         type='text'
         value={inputValue}
-        placeholder='insert todoList..'
+        placeholder='Todo추가 인풋'
         onChange={insertInputChange}
       />
     </form>
