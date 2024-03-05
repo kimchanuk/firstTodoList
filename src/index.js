@@ -5,14 +5,17 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { TodoDataContextProvider } from './context/TodoData';
 import { HeaderModalContextProvider } from './context/HeaderModal';
+import { DarkMoeContextProvider } from './context/DarkMode';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <HeaderModalContextProvider>
-    <TodoDataContextProvider>
-      <App />
-    </TodoDataContextProvider>
-  </HeaderModalContextProvider>
+  <DarkMoeContextProvider>
+    <HeaderModalContextProvider>
+      <TodoDataContextProvider>
+        <App />
+      </TodoDataContextProvider>
+    </HeaderModalContextProvider>
+  </DarkMoeContextProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

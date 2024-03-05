@@ -1,11 +1,14 @@
+.dark {
+  background-color: black;
+  color: red;
+}
+
 .App {
-  background-color: rgb(26, 26, 26);
   width: 100vw;
   height: 100vh;
 }
 
 * {
-  color: white;
   padding: 0;
   margin: 0;
 }
@@ -29,7 +32,6 @@ li {
   background-color: pink;
   width: 80px;
   height: 40px;
-  color: black;
   cursor: pointer;
 }
 
@@ -38,7 +40,7 @@ li {
 .searchForm > input {
   border: 3px solid pink;
   background-color: pink;
-  color: black;
+
   width: 100%;
   margin-top: 20px;
   padding: 8px;
@@ -62,7 +64,7 @@ li {
 .main-length input {
   border: 3px solid pink;
   background-color: pink;
-  color: black;
+
   height: 24px;
 }
 
@@ -91,13 +93,13 @@ li {
 .mainList span {
   width: 20%;
   background-color: pink;
-  color: black;
+
   padding: 4px 10px;
 }
 
 .mainList button {
   margin-left: 20px;
-  color: black;
+
   padding: 4px 10px;
   cursor: pointer;
 }
