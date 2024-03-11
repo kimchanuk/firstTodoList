@@ -29,3 +29,10 @@ export default function ModifyModal() {
     </form>
   );
 }
+
+console.log(`체크박스를 클릭하면 completed가 됨 
+
+전체삭제 버튼을 클릭하면?
+const allFilter = todos.filter(t=> t.status !== complete)
+setTodos(allFilter)
+`);
