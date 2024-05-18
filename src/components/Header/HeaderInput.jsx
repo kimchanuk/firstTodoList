@@ -3,7 +3,8 @@ import { HeaderModalContext } from '../../context/HeaderModal';
 import { useDarkMode } from '../../context/DarkMode';
 
 export default function HeaderInput() {
-  const { headerTaps, changeHeader } = useContext(HeaderModalContext);
+  const { headerTaps, setHeaderTap, changeHeader } =
+    useContext(HeaderModalContext);
 
   const { darkMode, toggleDarkMode } = useDarkMode();
 

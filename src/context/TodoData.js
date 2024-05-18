@@ -26,14 +26,17 @@ export const TodoDataContextProvider = ({ children }) => {
   //검색
 
   const [modifyModal, setModifyModal] = useState(false);
+  //모달창의 상태값
+
   const modifyModalHandler = () => {
     setModifyModal(prev => !prev);
   };
+  //모달창을 클릭시 상태가 변하는 함수
 
   const [initValue, setInitValue] = useState(null);
+  //모달창의 초기 데이터 상태값 처음은 null
 
-  //modify
-
+  //////////////////
   const removeHandler = todosObj => {
     const removeValue = todos.filter(t => t.id !== todosObj.id);
     setTodos(removeValue);

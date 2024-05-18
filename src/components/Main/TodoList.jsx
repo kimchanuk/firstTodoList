@@ -9,9 +9,9 @@ export default function TodoList({ todosObj }) {
     useContext(TodoDataContext);
 
   const changeCheckHandler = e => {
-    const status = e.target.checked ? 'completed' : 'active';
+    const checkStatus = e.target.checked ? 'completed' : 'active';
     const checkValue = todos.map(t =>
-      t.id === id ? { ...todosObj, status } : t
+      t.id === id ? { ...todosObj, status: checkStatus } : t
     );
     setTodos(checkValue);
   };

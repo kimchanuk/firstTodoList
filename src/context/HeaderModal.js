@@ -49,6 +49,7 @@ export const HeaderModalContextProvider = ({ children }) => {
         getFilteredItem,
         searchInit,
         setSearchInit,
+        setHeaderTap,
       }}
     >
       {children}
